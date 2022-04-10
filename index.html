@@ -8,39 +8,46 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
-
-    <button type="button" class="btn btn-link">Link</button>
-
-    <!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Launch demo modal
-    </button>
-    
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container">
+        <h1 class="h2 text-center mt-4 mb-4">六角西餐廳</h1>
+        <form action="" method="post">
+            <div class="mb-3">
+                <label for="name" class="form-label mb-2">姓名</label>
+                <input type="text" id="name" class="form-control">
             </div>
-            <div class="modal-body">
-            ...
+            <div class="mb-3">
+                <label for="tel" class="form-label mb-2">電話</label>
+                <input type="tel" id="tel" class="form-control">
             </div>
-            <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <div class="mb-3">
+                <label for="date" class="form-label mb-2">日期</label>
+                <input type="date" id="date" class="form-control">
             </div>
-        </div>
-        </div>
+            <div class="mb-3">
+                <label for="number-of-people" class="form-label mb-2">用餐人數</label>
+                <input type="text" id="number-of-people" class="form-control">
+            </div>
+            <div class="mb-3">
+                <label for="order-item" class="form-label mb-2">其它項目</label>
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <input type="checkbox" name="other-item" id="child-seat" class="form-check-input">
+                        <label for="child-seat" class="form-check-label">需要兒童座椅</label>
+                    </li>
+                    <li class="mb-2">
+                        <input type="checkbox" name="other-item" id="vegan" class="form-check-input">
+                        <label for="vegan" class="form-check-label">素食餐點</label>
+                    </li>
+                    <li class="mb-2">
+                        <input type="checkbox" name="other-item" id="smoking-zone" class="form-check-input">
+                        <label for="smoking-zone" class="form-check-label">吸煙區</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="mb-3">
+                <input type="submit" class="btn btn-dark w-100" value="送出">
+            </div>
+        </form>
     </div>
 
     <script src="./js/bootstrap/bootstrap.min.js"></script>
