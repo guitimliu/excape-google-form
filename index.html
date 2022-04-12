@@ -11,13 +11,19 @@
     <div class="container">
         <h1 class="h2 text-center mt-4 mb-4">六角西餐廳</h1>
         <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdKm9eRIdDk-xDBOuJdfoneMbPT0bc_I7yLSJ6LUAIvPvHRCw/formResponse" method="post">
-            <div class="mb-3">
-                <label for="name" class="form-label mb-2">姓名</label>
-                <input type="text" id="name" name="entry.1992563402" class="form-control" required>
-            </div>
-            <div class="mb-3">
-                <label for="tel" class="form-label mb-2">電話</label>
-                <input type="tel" id="tel" name="entry.1128326439" class="form-control" required>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="name" class="form-label mb-2">姓名</label>
+                        <input type="text" id="name" name="entry.1992563402" class="form-control" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="tel" class="form-label mb-2">電話</label>
+                        <input type="tel" id="tel" name="entry.1128326439" class="form-control" required>
+                    </div>
+                </div>
             </div>
             <div class="mb-3">
                 <label for="date" class="form-label mb-2">日期</label>
@@ -25,7 +31,18 @@
             </div>
             <div class="mb-3">
                 <label for="number-of-people" class="form-label mb-2">用餐人數</label>
-                <input type="text" id="number-of-people" name="entry.2109948975" class="form-control" required>
+                <select name="entry.2109948975" id="number-of-people" class="form-select" required>
+                    <option value="1" selected>1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
             </div>
             <div class="mb-3">
                 <label for="order-item" class="form-label mb-2">其它項目</label>
